@@ -1,0 +1,28 @@
+.chip {
+    display: inline-block;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+    line-height: 32px;
+    padding: 0px 16px;
+    border-radius: 16px;
+    background-color: #e4e4e4;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    &.default {
+        background-color: $color-prive-green;
+        color: #ffffff;
+    }
+    &.small {
+        height: 24px;
+        line-height: 24px;
+    }
+    >img {
+        margin: 0 8px 0 -16px;
+    }
+}
+
+.chip .close {
+    line-height: 32px;
+}

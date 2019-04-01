@@ -1,0 +1,184 @@
+//Inputs
+.input-label {
+    color: $color-light-grey;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: none;
+    border-radius: 0;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    color: $color-dark-green;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+}
+
+.default-input {
+    position: relative;
+    >i {
+        color: $color-brand-purple;
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        height: 24px;
+        width: 24px;
+        padding: 0px;
+    }
+    .input-box {
+        background: $color-background;
+        border-radius: 100px;
+        padding: 0 48px 0 16px;
+    }
+}
+
+.search-input {
+    position: relative;
+    > i {
+        color: $color-brand-purple;
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        height: 24px;
+        width: 24px;
+        padding: 2px;
+    }
+    .search-box {
+        background: $color-background;
+        border-radius: 100px;
+        padding: 0 48px;
+    }
+    .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.default-textarea {
+    position: relative;
+    .input-box {
+        background: $color-background;
+        border-radius: 4px;
+        padding: 0;
+        textarea {
+            background-color: transparent;
+            border: none;
+            color: $color-dark-green;
+            font-size: 16px;
+            margin: 0px;
+            min-height: 80px;
+            margin-bottom: -5px;
+            padding: 8px 16px;
+            width: 100%
+        }
+    }
+    i {
+        color: $color-brand-purple;
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        font-size: 16px;
+        height: 16px;
+        width: 16px;
+        padding: 0px;
+    }
+}
+
+
+//Dropdowns
+.dropdown {
+    background: $color-background;
+    border-radius: 100px;
+    height: 40px;
+    padding: 8px 48px 8px 16px;
+    position: relative;
+    select {
+        display: block;
+        opacity: 0;
+        height: auto;
+        padding: 0;
+        -webkit-appearance: none;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    .dropdown-label {
+        color: $color-dark-green;
+        font-size: 16px;
+    }
+    i {
+        position: absolute;
+        color: $color-brand-purple;
+        top: 10px;
+        right: 16px;
+    }
+}
+
+.clientdropdown {
+    background-color: transparent;
+    display: inline-block;
+    padding-left: 0px;
+    .dropdown-label {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    i {
+        font-size: 16px;
+    }
+}
+
+.client-dropdown {
+    margin-bottom: 16px;
+    margin-top: 0px;
+    .open-in-view {
+        color: $color-brand-purple;
+    }
+}
+.selectReplacement {
+    display: inline-block;
+    select {
+        opacity: 0;
+        height: auto;
+        padding: 0;
+        -webkit-appearance: none;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    span.selectReplacementCurrent {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        padding-right: 8px; 
+    }
+    i {
+        color: $color-brand-purple;
+        font-size: 16px;
+    }
+}

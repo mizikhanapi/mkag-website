@@ -1,0 +1,22 @@
+.breadcrumb {
+    color: #3D505D;
+    font-size: 14px;
+    span {
+        a {
+            color: $color-brand-purple-50;
+        }
+        &::before {
+            content: '/';
+            color: #3D505D;
+            padding-right: 5px;
+        }
+        &:first-child {
+            &::before {
+                content: none;
+            }
+        }
+    }
+    &:last-child {
+        color: #3D505D;
+    }
+}

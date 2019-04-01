@@ -123,6 +123,7 @@ function mkag_scripts() {
 	wp_enqueue_style( 'mkag-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css', '', '' );
 	wp_enqueue_style( 'fontawesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', '', '' );
+	wp_enqueue_style( 'mkag-styles', get_template_directory_uri() . '/src/css/style.css', '20190222', '' );
 
 	wp_enqueue_script( 'mkag-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

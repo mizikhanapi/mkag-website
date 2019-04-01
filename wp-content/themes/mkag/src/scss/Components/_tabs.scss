@@ -1,0 +1,31 @@
+.tabs {
+    margin-top: 61px;
+    .tab {
+        margin: 0 16px;
+        text-transform: capitalize;
+        &:first-child {
+            margin-left: 0px;
+        }
+        a {
+            color: $color-brand-purple-50;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 0;
+            &:hover, &:focus, &.active {
+                background-color: transparent;
+                color: $color-brand-purple;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            &:focus {
+                &.active {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .indicator {
+        background-color: $color-brand-purple;
+        height: 1px;
+    }
+}

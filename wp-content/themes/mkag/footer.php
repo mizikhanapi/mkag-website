@@ -11,26 +11,37 @@
 
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mkag' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'mkag' ), 'WordPress' );
+<footer id="colophon" class="site-footer">
+    <div class="container-fluid">
+        <div class="footer-navigation">
+            <ul>
+					<li class="current-menu-item"><a href="">Home</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="">Terms and Conditions</a></li>
+					<li><a href="">Privacy</a></li>
+					<li><a href="">FAQs</a></li>
+				</ul>
+            <?php
+					// wp_nav_menu( array(
+					// 	'theme_location'	=> 'menu-2',
+					// 	'menu_id'					=> 'footer-menu',
+					// 	'container'				=> '',
+					// ) );
 				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'mkag' ), 'mkag', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+        </div>
+        <div class="site-info">
+            <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mkag' ) ); ?>">
+                All right reserved. © MKAG Technologies PLT
+            </a>
+        </div><!-- .site-info -->
+    </div>
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

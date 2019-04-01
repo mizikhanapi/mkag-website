@@ -1,0 +1,92 @@
+.table {
+    thead {
+        tr {
+            th {
+                color: $color-light-grey;
+                font-size: 11px;
+                padding: 8px;
+                line-height: 1.5;
+                &:last-child {
+                    position: relative;
+                    width: 32px;
+                    label {
+                        position: absolute;
+                        top: 8px;
+                        left: 8px;
+                    }
+                }
+                &.icon {
+                    width: 64px;
+                }
+            }
+            th:first-child {
+                color: black;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                color: $color-grey;
+                padding: 16px 8px;
+                &:last-child {
+                    position: relative;
+                    label {
+                        position: absolute;
+                        top: 22px;
+                        left: 8px;
+                    }
+                }
+                &.input {
+                    padding: 8px;
+                }
+                &.icon {
+                    text-align: center;
+                    i {
+                        color: $color-brand-purple;
+                    }
+                }
+            }
+            &:hover {
+                box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+                transition: all .5s ease;
+            }
+        }
+    }
+}
+
+[type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    z-index: 0;
+    border: 2px solid $color-light-grey;
+    border-radius: 1px;
+    margin-top: 0px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    top: 0px;
+    left: 0px;
+    width: 6px;
+    height: 12px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #26a69a;
+    border-bottom: 2px solid #26a69a;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+[type="checkbox"]+span:not(.lever) {
+    padding-left: 0px;
+}
