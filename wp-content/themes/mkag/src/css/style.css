@@ -160,7 +160,7 @@ p {
   margin: 0px; }
 
 .site-footer {
-  background-color: #2C001E;
+  background-color: #333333;
   padding: 24px 0; }
   .site-footer .footer-navigation {
     text-align: center; }
@@ -185,9 +185,11 @@ p {
   padding: 32px; }
 
 .btn {
-  border-radius: 100px;
+  border-radius: 6px;
   box-shadow: none;
   height: 40px;
+  line-height: 1.4;
+  padding: 8px 32px;
   text-transform: capitalize; }
   .btn i {
     font-size: 14px;
@@ -214,7 +216,7 @@ p {
     font-size: 16px; }
 
 .btn-default {
-  background-color: #00557E;
+  background-color: #E95420;
   color: #FFFFFF; }
   .btn-default:hover, .btn-default:focus {
     background-color: #40809F; }

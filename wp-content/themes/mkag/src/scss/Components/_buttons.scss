@@ -1,7 +1,9 @@
 .btn {
-    border-radius: 100px;
+    border-radius: 6px;
     box-shadow: none;
     height: 40px;
+    line-height: 1.4;
+    padding: 8px 32px;
     text-transform: capitalize;
     i {
         font-size: 14px;
@@ -36,7 +38,7 @@
 }
 
 .btn-default {
-    background-color: $color-brand-purple;
+    background-color: #E95420;
     color: $color-white;
     &:hover, &:focus {
         background-color: $color-brand-purple-75;
