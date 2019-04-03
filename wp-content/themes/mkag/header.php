@@ -25,38 +25,39 @@
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mkag' ); ?></a>
 
-        <header id="masthead" class="site-header">
+        <header class="site-header">
             <div class="container-fluid">
-                <div class="header-wrapper">
+                <nav class="navbar navbar-expand-md header-wrapper">
+
                     <div class="site-branding">
                         <?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                                rel="home"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" /></a>
-                        <?php
-			else :
-				?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                                rel="home"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" /></a>
-                        <?php
-			endif;
-				?>
-                    </div><!-- .site-branding -->
-
-                    <nav id="site-navigation" class="main-navigation">
-                        <button class="menu-toggle" aria-controls="primary-menu"
-                            aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mkag' ); ?></button>
-                        <?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-                    </nav><!-- #site-navigation -->
-                </div>
+                        the_custom_logo();
+                        if ( is_front_page() && is_home() ) :
+                            ?>
+                                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img
+                                            src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" /></a>
+                                    <?php
+                        else :
+                            ?>
+                                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img
+                                            src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" /></a>
+                                    <?php
+                        endif;
+                            ?>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <?php
+                        wp_nav_menu( array(
+                            'theme_location' => 'menu-1',
+                            'menu_id'        => 'primary-menu',
+                            'menu_class'     => 'collapse navbar-collapse',
+                        ) );
+                        ?>
+                </nav>
             </div>
-        </header><!-- #masthead -->
+        </header>
 
         <div id="content" class="site-content">
