@@ -41,16 +41,19 @@
     background-color: #E95420;
     color: $color-white;
     &:hover, &:focus {
-        background-color: $color-brand-purple-75;
+        transform: translateY(-4px) scale(1.1);
+        transition: all .5s ease;
     }
 }
 
 .btn-secondary {
     background-color: $color-white;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
-    color: $color-brand-purple;
+    box-shadow: 4px 16px 40px 0 rgba(62, 50, 105, 0.25);
+    border: none;
+    color: #e85420;
     &:hover, &:focus {
-        background-color: $color-light;
+        transform: translateY(-4px) scale(1.1);
+        transition: all .5s ease;
     }
     i {
         color: $color-brand-purple;
