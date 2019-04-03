@@ -1,0 +1,6 @@
+.DS_Store
+.htaccess
+package-lock.json
+node_modules/
+wp-config.php
+wp-content/uploads/
