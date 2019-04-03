@@ -223,6 +223,7 @@ p {
   background-color: #E95420;
   color: #FFFFFF; }
   .btn-default:hover, .btn-default:focus {
+    color: #FFFFFF;
     transform: translateY(-4px) scale(1.1);
     transition: all .5s ease; }
 
@@ -232,6 +233,7 @@ p {
   border: none;
   color: #e85420; }
   .btn-secondary:hover, .btn-secondary:focus {
+    background-color: #FFFFFF;
     transform: translateY(-4px) scale(1.1);
     transition: all .5s ease; }
   .btn-secondary i {

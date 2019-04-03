@@ -41,6 +41,7 @@
     background-color: #E95420;
     color: $color-white;
     &:hover, &:focus {
+        color: $color-white;
         transform: translateY(-4px) scale(1.1);
         transition: all .5s ease;
     }
@@ -52,6 +53,7 @@
     border: none;
     color: #e85420;
     &:hover, &:focus {
+        background-color: $color-white;
         transform: translateY(-4px) scale(1.1);
         transition: all .5s ease;
     }
