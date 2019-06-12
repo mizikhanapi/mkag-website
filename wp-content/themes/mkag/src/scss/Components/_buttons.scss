@@ -54,6 +54,7 @@
     color: #e85420;
     &:hover, &:focus {
         background-color: $color-white;
+        color: #e85420;
         transform: translateY(-4px) scale(1.1);
         transition: all .5s ease;
     }

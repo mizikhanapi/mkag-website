@@ -12,6 +12,14 @@
                     height: 30px;
                 }
             }
+            @media #{ $mobile } {
+                margin: 0 auto;
+            }
+        }
+        button.navbar-toggler {
+            @media #{ $mobile } {
+                display: none;
+            }
         }
         .navbar-collapse {
             ul {
@@ -30,6 +38,21 @@
                     }
                     &:first-child {
                         padding-left: 0px;
+                    }
+                }
+            }
+            @media #{ $mobile } {
+                display: table;
+                margin: 0 auto;
+                margin-top: 15px;
+                ul {
+                    display: inline-block;
+                    li {
+                        display: inline-block;
+                        padding: 0 15px;
+                        &:last-child {
+                            padding-right: 0px;
+                        }
                     }
                 }
             }

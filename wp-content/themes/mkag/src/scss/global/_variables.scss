@@ -1,3 +1,31 @@
+$break-xs: 575px;
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+
+// $min-sm: 576px;
+// $min-md: 768px;
+// $min-lg: 992px;
+// $min-xl: 1200px;
+
+$xs: "(max-width: 575px)";
+$sm: "(min-width: 576px)";
+$md: "(min-width: 768px)";
+$lg: "(min-width: 992px)";
+$xl: "(min-width: 1200px)";
+
+$max-sm: "(max-width: 575px)";
+$max-md: "(max-width: 767px)";
+$max-lg: "(max-width: 991px)";
+$max-xl: "(max-width: 1199px)";
+
+$mobile-small: $xs;
+$mobile: $max-md;
+$desktop: $md;
+$desktop-medium: "(min-width: 768px) and (max-width: 991px)";
+$desktop-large: $lg;
+
 //Colors
 //Brand Colors
 $color-brand-purple: #00557E;
