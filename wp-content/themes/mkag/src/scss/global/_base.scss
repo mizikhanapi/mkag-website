@@ -3,6 +3,26 @@ html,
             height: 100%;
         }
 
+        .container-fluid {
+            @media (min-width: 1626px) {
+                padding-right: 0;
+                padding-left: 0;
+                width: 1534px;
+            }
+            @media #{ $desktop-large } {
+                padding-right: 128px;
+                padding-left: 128px;
+            }
+            @media #{ $desktop } {
+                padding-right: 64px;
+                padding-left: 64px;
+            }
+            @media #{ $mobile } {
+                padding-right: 16px;
+                padding-left: 16px;
+            }
+        }
+
         /* Layout */
         .wrapper {
             height: 100%;
