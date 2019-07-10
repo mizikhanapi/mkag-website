@@ -78,6 +78,20 @@ body {
   margin-right: auto;
   margin-left: auto; }
 
+.learn-page-header {
+  background-color: #444;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 64px 0; }
+  .learn-page-header h1 {
+    color: #ffffff; }
+
+.learn-page {
+  padding: 64px 0; }
+  .learn-page .article-list-action {
+    margin-top: 32px; }
+
 @font-face {
   font-family: 'Proxima Nova';
   src: url("../fonts/proxima_nova_regular.eot");

@@ -7,7 +7,11 @@ get_header();
         <?php// get_template_part( 'template-parts/featured-content' ); ?>
 
 
-
+        <div class="section-latest-posts learn-page-header" style="background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/2019/04/hero.jpg');">
+            <div class="container-fluid">
+                <h1><?php echo get_the_title(); ?></h1>
+            </div>
+        </div>
         <div class="section-latest-posts learn-page">
             <div class="container-fluid">
                 <div class="article-list">
