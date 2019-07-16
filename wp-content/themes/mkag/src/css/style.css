@@ -639,7 +639,9 @@ span.badge-default {
         .article-card .detail ul.meta li:first-child {
           padding-left: 0px; }
     .article-card .detail .title a {
-      color: #000000; }
+      color: #000000;
+      display: block;
+      height: 50px; }
     .article-card .detail .text a p {
       color: #707070; }
     .article-card .detail .action {
