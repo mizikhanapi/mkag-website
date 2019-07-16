@@ -39,13 +39,10 @@
             </div>
         </div><!-- .entry-header -->
 
-        <?php wealthup_post_thumbnail(); ?>
     </div>
 
     <div class="entry-content">
         <div class="container-fluid">
-            <?php
-            if ( is_page_template( 'single-elementor.php' ) ) { ?>
                 <?php
                 the_content( sprintf(
                     wp_kses(
@@ -65,67 +62,9 @@
                     'after'  => '</div>',
                 ) );
                 ?>
-            <?php 
-            } else { ?>
-            <div class="article-begin paragraph">
-                <?php
-                the_content( sprintf(
-                    wp_kses(
-                        /* translators: %s: Name of current post. Only visible to screen readers */
-                        __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'wealthup' ),
-                        array(
-                            'span' => array(
-                                'class' => array(),
-                            ),
-                        )
-                    ),
-                    get_the_title()
-                ) );
-
-                wp_link_pages( array(
-                    'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wealthup' ),
-                    'after'  => '</div>',
-                ) );
-                ?>
-            </div>
-            <?php
-            }
-            ?>
 
         </div>
     </div><!-- .entry-content -->
-    
-    <?php 
-    $podcast_url = get_field('soundcloud_url');
-    $podcast_name = get_field('soundcloud_name');
-    if($podcast_url) : ?>
-    <div class="the-podcast">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="offset-sm-1 col-sm-10 offset-md-2 col-md-8">
-                    <button type="button" class="btn btn-primary btn-block button-open-podcast icon left"
-                        data-url="<?php echo home_url('/podcast-player/?id='.get_the_id()); ?>"
-                        data-name="<?php echo $podcast_name; ?>">
-                        <img src="<?php echo bloginfo('template_url');?>/assets/play.svg">
-                        <?php echo $podcast_name; ?>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php endif; ?>
-    
-    <?php 
-    $cta_event = do_shortcode('[event]');
-    if($cta_event) : ?>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="offset-sm-1 col-sm-10 offset-md-2 col-md-8">
-                    <?php// echo $cta_event; ?>
-                </div>
-            </div>
-        </div>
-    <?php endif; ?>
     
     <footer class="entry-footer">
         <div class="container-fluid">
@@ -135,26 +74,26 @@
                     <div class="author-thumbnail">
                         <div class="thumbnail-container">
                             <?php 
-						$author_id = get_the_author_meta('ID');
-						$author_image = get_field('author_image', 'user_' . $author_id);
-						if( !empty($author_image) ): ?>
-                            <img src="<?php echo $author_image['url']; ?>" alt="<?php echo $author_image['alt']; ?>" />
-                            <?php else: ?>
+						//$author_id = get_the_author_meta('ID');
+						//$author_image = get_field('author_image', 'user_' . $author_id);
+						//if( !empty($author_image) ): ?>
+                            <img src="<?php// echo $author_image['url']; ?>" alt="<?php// echo $author_image['alt']; ?>" />
+                            <?php //else: ?>
                             <img src="#">
-                            <?php endif; ?>
+                            <?php// endif; ?>
                         </div>
                     </div>
                     <div class="author-meta">
                         <span class="caption green">Written by</span>
                         <?php
                         //$author_id = get_the_author_meta('ID');
-                        $author_name = get_field('author_name');
-                        if( !empty($author_name) ): ?>
-                        <p><?php the_field('author_name'); ?></p>
-                        <p class="small"><?php the_field('author_title'); ?></p>
-                        <?php else: ?>
+                        //$author_name = get_field('author_name');
+                        //if( !empty($author_name) ): ?>
+                        <p><?php //the_field('author_name'); ?></p>
+                        <p class="small"><?php// the_field('author_title'); ?></p>
+                        <?php //else: ?>
                         <p><?php the_author(); ?></p>
-                        <?php endif; ?>
+                        <?php //endif; ?>
                     </div>
                     <?php //wealthup_entry_footer(); ?>
                 </div>
